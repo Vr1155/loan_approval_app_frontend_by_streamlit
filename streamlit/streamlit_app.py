@@ -51,7 +51,7 @@ if st.button('Predict'):
 
     # Send POST request to prediction API and display result
     try:
-        response = requests.post('http://127.0.0.1:8000/predict', data=data)
+        response = requests.post('http://165.227.76.151/predict', data=data)
         prediction = response.json()
         st.write("### Prediction Result:")
         st.write(prediction)
